@@ -4,7 +4,7 @@ venv_dir := $(get_venv_dir)/pipenv_venv
 venv_file := $(CURDIR)/.test_venv
 get_venv_path =$(file < $(venv_file))
 # This is how we will build tag-specific wheels, e.g. py36 or py37
-PY_VERSIONS:= 3.7 3.8 3.9 3.10
+PY_VERSIONS:= 3.8 3.9 3.10
 BACKSLASH = '\\'
 # This is how we will build generic wheels, e.g. py2 or py3
 INSTALL_TARGETS := $(addprefix install-py,$(PY_VERSIONS))
